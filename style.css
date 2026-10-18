@@ -1,0 +1,88 @@
+* {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 480px;
+  margin: auto;
+  color: white;
+  background: #282626;
+  height: 100dvh;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 10vh 1fr 10vh;
+  background: #4ad613;
+  height: 100%;
+}
+
+header,
+footer {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  font-weight: bold;
+}
+
+header {
+  display: grid;
+  gap: 16px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.plots {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.plot {
+  border: 4px solid #734f28;
+  background: #a67139;
+  height: 120px;
+  width: 120px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+footer span {
+  padding: 10px 14px;
+  border: 1px solid white;
+  text-align: center;
+  width: 100%;
+}
